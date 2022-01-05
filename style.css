@@ -1,0 +1,47 @@
+.main-container {
+    display: grid;
+    width: 750px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    background-color: red;
+    border: 5px solid black;
+}
+
+.container-a {
+    background-color: cornflowerblue;
+}
+.container-b {
+    background-color: yellow;
+}
+
+.container-c {
+    background-color: violet;
+}
+.container-d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+    background-color: chartreuse;
+}
+
+.small-container1 {
+    background-color: skyblue;
+    width: 150px;
+    height: 100px;
+}
+.small-container2 {
+    background-color: rgb(235, 135, 197);
+    width: 150px;
+    height: 100px;
+}
+
+.row-top {
+    background-color: orangered;
+    height: 150px;
+}
+
+.row-bottom {
+    background-color: purple;
+    height: 150px;
+}
