@@ -10,7 +10,25 @@
 
 .container-a {
     background-color: cornflowerblue;
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
+    
 }
+
+.same-size-containers-text-a {
+margin-top: 60px;
+text-align: center;
+}
+.same-size-containers-text-b {
+margin-top: 60px;
+text-align: center;
+}
+.same-size-containers-text-c {
+margin-top: 60px;
+text-align: center;
+}
+
 .container-b {
     background-color: yellow;
 }
