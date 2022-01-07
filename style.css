@@ -1,6 +1,12 @@
+/* Variables */
+
+:root {
+    --h2: 3em;
+}
+
 .main-container {
     display: grid;
-    width: 950px
+    width: 950px;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 400px 300px;
@@ -16,18 +22,23 @@
     
 }
 
-.same-size-containers-text-a {
-margin-top: 60px;
-text-align: center;
+.same-size-containers a {
+    display: inline-block;
+    margin: 50px 0 0 30px;
 }
-.same-size-containers-text-b {
-margin-top: 60px;
-text-align: center;
+
+.same-size-containers p {
+    margin: 0 0 0 30px;
+    
+    line-height: 1;
+
 }
-.same-size-containers-text-c {
-margin-top: 60px;
-text-align: center;
+
+.same-size-containers-text {
+font-size: var(--h2);    
+margin: 70px 0 30px 30px;
 }
+
 
 .container-b {
     background-color: yellow;
