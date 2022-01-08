@@ -12,7 +12,6 @@
   width: 1000px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 400px 300px;
-  border: 8px solid black;
 }
 
 .container-a {
@@ -167,7 +166,6 @@ img {
     color: white;
     font-size: 2em;
     margin: 90px 0 0 30px;
-    color: #8fd82f;
     font-family: var(--h2-font-family);
 }
 .small-container2 {
@@ -225,15 +223,21 @@ font-family: var(--h2-font-family);
   background-color: #f1cfb1;
 }
 
+
 .row-bottom {
   display: flex;  
   justify-content: center;
-  align-items:center ;
+  align-items: center;
   background-color: #694bff;
   height: 150px;
+  
 }
+
+/* Text inside of row-bottom  */
 
 .row-bottom h2 {
     font-size: 30px;
+    color: #ffff;
+    font-family: var(--h2-font-family);
 }
 
