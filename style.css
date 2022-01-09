@@ -199,24 +199,48 @@ font-family: var(--h2-font-family);
   align-items: center;
 }
 
+/* Animations on each circle */
+
 .circle-1 {
   width: 50px;
   height: 50px;
   border-radius: 100%;
   background-color: #35deff;
+  /* animation: circle1-color-change .95s infinite; */
+
+  
 }
+
+/* @keyframes circle1-color-change {
+    from {background-color: #35deff;}
+    to {background-color: #f1cfb1;}
+  } */
 .circle-2 {
   width: 50px;
   height: 50px;
   border-radius: 100%;
   background-color: #694bff;
+  /* animation: circle2-color-change .85s infinite; */
+  
 }
+
+/* @keyframes circle2-color-change {
+    from {background-color: #694bff;}
+    to {background-color: #f1cfb1;}
+  } */
 .circle-3 {
   width: 50px;
   height: 50px;
   border-radius: 100%;
   background-color: #f97aff;
+  /* animation: circle3-color-change .75s infinite; */
+  
 }
+
+/* @keyframes circle3-color-change {
+    from {background-color: #694bff;}
+    to {background-color: #35deff;}
+  } */
 .circle-4 {
   width: 50px;
   height: 50px;
