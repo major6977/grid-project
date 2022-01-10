@@ -163,6 +163,8 @@ img {
     color: #cea3ae;
 }
 
+
+
 .small-container1 h2 {
     color: white;
     font-size: 2em;
@@ -205,7 +207,7 @@ font-family: var(--h2-font-family);
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background-color: #35deff; 
+  /* background-color: #35deff;  */
   /* animation: circle1-color-change .95s infinite; */
 
   
@@ -232,7 +234,7 @@ font-family: var(--h2-font-family);
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background-color: #f97aff;
+  /* background-color: #f97aff; */
   /* animation: circle3-color-change .75s infinite; */
   
 }
@@ -245,7 +247,7 @@ font-family: var(--h2-font-family);
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background-color: #f1cfb1;
+  /* background-color: #f1cfb1; */
 }
 
 
@@ -266,3 +268,8 @@ font-family: var(--h2-font-family);
     font-family: var(--h2-font-family);
 }
 
+/* Different row-bottom letter colors but only the top row */
+
+#L {
+    color: #31d0f5;
+}
