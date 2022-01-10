@@ -19,7 +19,7 @@ function switchColor1() {
     if (currentColor >= colors.length) currentColor = 0;
 
     $('.circle-1').css('background-color', colors[currentColor++]);
-    setTimeout(function(){ switchColor1(); }, 2000);
+    setTimeout(function(){ switchColor1(); }, 1000);
 }
 switchColor1();
 
@@ -33,7 +33,7 @@ function switchColor2() {
 
     $('.circle-2').css('background-color', colors[currentColor++]);
 
-    setTimeout(function(){ switchColor2(); }, 4000); 
+    setTimeout(function(){ switchColor2(); }, 2000); 
      }
 switchColor2();
 
@@ -45,7 +45,7 @@ function switchColor3() {
     if (currentColor >= colors.length) currentColor = 0;
 
     $('.circle-3').css('background-color', colors[currentColor++]);
-      setTimeout(function(){ switchColor3(); }, 6000);
+      setTimeout(function(){ switchColor3(); }, 1000);
     // setTimeout(switchColor3, 4000);
 }
 switchColor3();
@@ -55,6 +55,6 @@ function switchColor4() {
     var colors = ["#35deff", "#694bff", "#f97aff", "#f1cfb1"];
     if (currentColor >= colors.length) currentColor = 0;
     $('.circle-4').css('background-color', colors[currentColor++]);
-    setTimeout(function(){ switchColor4(); }, 8000);
+    setTimeout(function(){ switchColor4(); }, 2000);
 }
 switchColor4();
