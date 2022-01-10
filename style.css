@@ -273,3 +273,11 @@ font-family: var(--h2-font-family);
 #L {
     color: #31d0f5;
 }
+
+#o {
+    color: #97F1FF;
+}
+
+#r {
+    color: hsl(188, 53%, 82%);
+}
