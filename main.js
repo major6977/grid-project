@@ -58,3 +58,9 @@ function switchColor4() {
     setTimeout(function(){ switchColor4(); }, 2000);
 }
 switchColor4();
+
+// Animations for square-2
+
+document.querySelector("#rotate").window.addEventListener('load', function() {
+    document.querySelector(".square-2").classList.add('rotating')
+ });

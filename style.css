@@ -94,6 +94,7 @@
     height: 100px;
     width: 100px;
 }
+/* Animation for square-2 */
 
 .square-1 {
     background-color: #ee79fd;
@@ -106,6 +107,16 @@
     z-index: 2;
     opacity: .6;
 }
+
+.rotating {
+    animation: rotate 1s infinite;
+ }
+ 
+ @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+ }
+ 
 .square-3 {
     display: flex;
     justify-content: center;
@@ -302,5 +313,5 @@ font-family: var(--h2-font-family);
     color: #f979fe;
 }
 #m {
-    color: #eeccb0;
+    color: hsl(188, 53%, 82%);
 }
