@@ -59,7 +59,7 @@ function switchColor4() {
 }
 switchColor4();
 
-// Animations for square-2
+// Rotating square-2
 
 document.querySelector("#rotate").window.addEventListener('load', function() {
     document.querySelector(".square-2").classList.add('rotating')
