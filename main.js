@@ -59,8 +59,18 @@ function switchColor4() {
 }
 switchColor4();
 
-// Rotating square-2
 
-document.querySelector("#rotate").window.addEventListener('load', function() {
-    document.querySelector(".square-2").classList.add('rotating')
- });
+// document.getElementById("rotate").window.addEventListener("load" ,function() {
+//     document.getElementsByClassName("square-2").classList.add("rotating")
+// });
+
+//  Flip Function to container-a
+
+ const card = document.getElementById("card")
+
+ card.addEventListener("click",flipCard);
+
+function flipCard() {
+    card.classList.toggle("flipCard");
+ }
+
