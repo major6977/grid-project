@@ -74,3 +74,27 @@ function flipCard() {
     card.classList.toggle("flipCard");
  }
 
+//  Flip card3
+
+const card3 = document.getElementById("card3")
+
+card3.addEventListener("click",flipCard3);
+
+function flipCard3() {
+    card3.classList.toggle("flipCard");
+ }
+
+//  Flip card4
+
+const card4 = document.getElementById("card4")
+
+card4.addEventListener("click",flipCard4);
+
+function flipCard4() {
+    card4.classList.toggle("flipCard");
+ }
+
+
+
+
+
