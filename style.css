@@ -1,8 +1,8 @@
 /* Variables */
 
 :root {
-  --h2: 3em;
-  --h3: 1.5em;
+  --h2: 3.5vw;
+  --h3: 3vw;
   --h2-font-family: sans-serif;
   --p-font-family: sans-serif;
 }
@@ -10,10 +10,13 @@
 
 .main-container {
   display: grid;
-  width: 1000px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 400px 300px;
+  max-width: 1000px;
+  width: auto;
+  grid-template-columns: 1fr 1fr 1fr;  
+  grid-template-rows: 400px 300px;  
+   
 }
+
 
 
 
@@ -413,3 +416,36 @@ font-family: var(--h2-font-family);
 #m {
     color: hsl(188, 53%, 82%);
 }
+
+/* Media Queries */
+
+@media (max-width: 850px) {
+    .main-container{
+        grid-auto-rows: minmax(500px, auto);
+    }
+    .grid-a{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        /* grid-row-start: 1;
+        grid-row-end: 2; */
+    }
+    .grid-b{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .grid-c{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .grid-d{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .grid-e{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
+    
+
+    
