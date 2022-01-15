@@ -7,102 +7,87 @@
   --p-font-family: sans-serif;
 }
 
-
 .main-container {
   display: grid;
   max-width: 1000px;
   width: auto;
-  grid-template-columns: 1fr 1fr 1fr;  
-  grid-template-rows: 400px 300px;  
-   
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 300px;
 }
 
-
-
-
 .container-a {
-  position: absolute;  
+  position: absolute;
   background: rgb(98, 11, 136);
   background: linear-gradient(
     127deg,
     rgba(98, 11, 136, 0.9032760574018127) 8%,
     rgba(204, 167, 207, 0.7250283232628398) 77%
   );
-   
 }
 
 .container-a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Flip Annimation */
 
 .card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 3s ease;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 3s ease;
 }
 
-.front  {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-   
-    /* text-align: center; */
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+  /* text-align: center; */
 }
 
 .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background-color: #0e7aea;  
-    text-align: center;
-    transform: rotateY(180deg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #0e7aea;
+  text-align: center;
+  transform: rotateY(180deg);
 }
 
-/* .axis-x-flip {
-    transform: flipX(180deg)
-} */
-
-
-
 .back h1 {
-    margin-top: 150px;
-     color: white; 
-    font-family: sans-serif;
-    font-size: var(--h3);
+  margin-top: 150px;
+  color: white;
+  font-family: sans-serif;
+  font-size: var(--h3);
 }
 
 .back h3 {
-    
-    font-family: sans-serif;
-    font-size: var(--h3);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+  font-family: sans-serif;
+  font-size: var(--h3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-
 .flipCard {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .same-size-containers a {
   display: inline-block;
   margin: 50px 0 0 30px;
 }
- .container-a a {
-     color: black;
- }
+.container-a a {
+  color: black;
+}
 
 .same-size-containers p {
-  font-family: var(--p-font-family);  
+  font-family: var(--p-font-family);
   margin: 0 0 0 30px;
   line-height: 1;
 }
@@ -114,97 +99,91 @@
   color: white;
 }
 
-/* .container-c same-size-containers-text {
-    font-size: var(--h2);
-    margin: 90px 0 30px 30px;
- } */
-
 .container-b {
   background-color: #0a234c;
 }
 
 .container-b p {
-    color: white;
-
+  color: white;
 }
 
 .container-b a {
-    color: white;
+  color: white;
 }
 
 .container-c {
-    width: 100%;
-    position: relative;
-    background-color: #eefdff;
+  width: 100%;
+  position: relative;
+  background-color: #eefdff;
 }
 
 .container-c h2 {
-    margin-top: 220px;
-    position: absolute;
-    left: 50%;
-    color: #315baf;
-    transform: translateX(-50%); 
-    font-size: 50px;
-    font-family: var(--p-font-family);
-    
-
+  margin-top: 220px;
+  position: absolute;
+  left: 50%;
+  color: #315baf;
+  transform: translateX(-50%);
+  font-size: 50px;
+  font-family: var(--p-font-family);
 }
 
 .squares-container {
-    display: flex; 
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    top: 150px;
-} 
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 150px;
+}
 
 .square {
-    position: absolute;
-    border-radius: 20px;
-    height: 100px;
-    width: 100px;
+  position: absolute;
+  border-radius: 20px;
+  height: 100px;
+  width: 100px;
 }
 /* Animation for square-2 */
 
 .square-1 {
-    background-color: #ee79fd;
-    z-index: 1;
-    opacity: .6;
-    transform: rotate(45deg);
+  background-color: #ee79fd;
+  z-index: 1;
+  opacity: 0.6;
+  transform: rotate(45deg);
 }
 .square-2 {
-    background-color: #0e7aea;
-    z-index: 2;
-    opacity: .6;
+  background-color: #0e7aea;
+  z-index: 2;
+  opacity: 0.6;
 }
 
 .rotating {
-    animation: rotate 10s infinite;
- }
- 
- @keyframes rotate {
+  animation: rotate 10s infinite;
+}
 
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-    
- }
- 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .square-3 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: white;
-    position: relative;
-    z-index: 3;
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  position: relative;
+  z-index: 3;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
 }
 
 img {
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
 }
 
 .container-d {
@@ -217,91 +196,86 @@ img {
 }
 
 .card-flip:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .small-container1 {
-    position: relative;
-  background-color: #0A234C;
+  position: relative;
+  background-color: #0a234c;
   width: 250px;
   height: 150px;
   margin-right: 10px;
-
 }
 
 .small-container1 {
-    background-color: rgb(10, 30, 68);  
+  background-color: rgb(10, 30, 68);
 }
 .small-container1 .back h3 {
-    color: white
+  color: white;
 }
 
 .small-container2 .back h3 {
-    color: white;
+  color: white;
 }
 
 /* Differant small-container colors */
 
 #l {
-    color: #31d0f5;
+  color: #31d0f5;
 }
 
 #o {
-    color: #385bc8;
+  color: #385bc8;
 }
 
 #r {
-    color: #6252ff;
+  color: #6252ff;
 }
 #e {
-    color: #b562ff;
+  color: #b562ff;
 }
 #m {
-    color: #f780f6;
+  color: #f780f6;
 }
 #u {
-    color: #cea3ae;
+  color: #cea3ae;
 }
 
 .small-container1 h2 {
-    color: white;
-    font-size: 2em;
-    margin: 90px 0 0 30px;
-    font-family: var(--h2-font-family);
+  color: white;
+  font-size: 2em;
+  margin: 90px 0 0 30px;
+  font-family: var(--h2-font-family);
 }
 
 .small-container1 .back {
-    background-color: #f780f6;
+  background-color: #f780f6;
 }
 .small-container2 {
-  position: relative;  
+  position: relative;
   background-color: white;
   width: 250px;
   height: 150px;
 }
 
 .small-container2 .back {
-    background-color: #b562ff;
-   
+  background-color: #b562ff;
 }
 
 .small-container2 .back h3 {
-     color: #eefdff;
+  color: #eefdff;
 }
-
 
 .small-container2 h2 {
-    color: #315baf;
-    font-size: 1.5em;
-    font-family: var(--h2-font-family);
+  color: #315baf;
+  font-size: 1.5em;
+  font-family: var(--h2-font-family);
 }
 .two-h2s {
-margin: 80px 0 0 30px;
-font-family: var(--h2-font-family);
+  margin: 80px 0 0 30px;
+  font-family: var(--h2-font-family);
 }
 
-
 .row-top {
-   
 }
 
 .row-top {
@@ -319,133 +293,104 @@ font-family: var(--h2-font-family);
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  /* background-color: #35deff;  */
-  /* animation: circle1-color-change .95s infinite; */
-
-  
 }
 
-/* @keyframes circle1-color-change {
-    from {background-color: #35deff;}
-    to {background-color: #f1cfb1;}
-  } */
 .circle-2 {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background-color: #694bff; 
-  /* animation: circle2-color-change .85s infinite; */
-  
+  background-color: #694bff;
 }
 
-/* @keyframes circle2-color-change {
-    from {background-color: #694bff;}
-    to {background-color: #f1cfb1;}
-  } */
 .circle-3 {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  /* background-color: #f97aff; */
-  /* animation: circle3-color-change .75s infinite; */
-  
 }
 
-/* @keyframes circle3-color-change {
-    from {background-color: #694bff;}
-    to {background-color: #35deff;}
-  } */
 .circle-4 {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  /* background-color: #f1cfb1; */
 }
 
-
 .row-bottom {
-  display: flex;  
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #694bff;
   height: 150px;
-  
 }
 
 /* Text inside of row-bottom  */
 
 .row-bottom h2 {
-    font-size: 30px;
-    color: #ffff;
-    font-family: var(--h2-font-family);
+  font-size: 30px;
+  color: #ffff;
+  font-family: var(--h2-font-family);
 }
 
 /* Different row-bottom letter colors but only the top row */
 
 #L {
-    color: #31d0f5;
+  color: #31d0f5;
 }
 
 #o {
-    color: #97F1FF;
+  color: #97f1ff;
 }
 
 #r {
-    color: hsl(188, 53%, 82%);
+  color: hsl(188, 53%, 82%);
 }
 
 #e {
-    color: #eef7ff;
+  color: #eef7ff;
 }
 
 #m {
-    color: #c0afff;
+  color: #c0afff;
 }
 #i {
-    color: #eeb5ff;
+  color: #eeb5ff;
 }
 #p {
-    color: #a071ff#;
+  color: #a071ff#;
 }
 #s {
-    color: #c0afff;
+  color: #c0afff;
 }
 #u {
-    color: #f979fe;
+  color: #f979fe;
 }
 #m {
-    color: hsl(188, 53%, 82%);
+  color: hsl(188, 53%, 82%);
 }
 
 /* Media Queries */
 
 @media (max-width: 850px) {
-    .main-container{
-        grid-auto-rows: minmax(500px, auto);
-    }
-    .grid-a{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        /* grid-row-start: 1;
-        grid-row-end: 2; */
-    }
-    .grid-b{
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    .grid-c{
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    .grid-d{
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    .grid-e{
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
+  .main-container {
+    grid-auto-rows: minmax(500px, auto);
+  }
+  .grid-a {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .grid-b {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .grid-c {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .grid-d {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .grid-e {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }
-    
-
-    
