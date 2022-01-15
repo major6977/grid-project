@@ -9,10 +9,12 @@
 
 .main-container {
   display: grid;
+  margin: 0 auto;
   max-width: 1000px;
   width: auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 400px 300px;
+
 }
 
 .container-a {
@@ -371,7 +373,9 @@ img {
 
 @media (max-width: 850px) {
   .main-container {
+    grid-template-columns: 1fr;  
     grid-auto-rows: minmax(500px, auto);
+    min-width: 100vw;
   }
   .grid-a {
     grid-column-start: 1;
