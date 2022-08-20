@@ -14,7 +14,6 @@
   width: auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 400px 300px;
-
 }
 
 .container-a {
@@ -31,7 +30,7 @@
   cursor: pointer;
 }
 
-/* Flip Annimation */
+/* Flip Animations */
 
 .card {
   position: relative;
@@ -219,7 +218,7 @@ img {
   color: white;
 }
 
-/* Differant small-container colors */
+/* Different small-container colors */
 
 #l {
   color: #31d0f5;
@@ -275,9 +274,6 @@ img {
 .two-h2s {
   margin: 80px 0 0 30px;
   font-family: var(--h2-font-family);
-}
-
-.row-top {
 }
 
 .row-top {
@@ -357,7 +353,7 @@ img {
   color: #eeb5ff;
 }
 #p {
-  color: #a071ff#;
+  color: #a071ff;
 }
 #s {
   color: #c0afff;
@@ -373,23 +369,27 @@ img {
 
 @media (max-width: 850px) {
   .main-container {
-    grid-template-columns: 1fr;  
+    grid-template-columns: 1fr;
     grid-auto-rows: minmax(500px, auto);
     min-width: 100vw;
   }
   .grid-a {
+    max-width: 100vw;
     grid-column-start: 1;
     grid-column-end: 2;
   }
   .grid-b {
+    max-width: 100vw;
     grid-column-start: 1;
     grid-column-end: 2;
   }
   .grid-c {
+    max-width: 100vw;
     grid-column-start: 1;
     grid-column-end: 2;
   }
   .grid-d {
+    max-width: 100vw;
     grid-column-start: 1;
     grid-column-end: 2;
   }
